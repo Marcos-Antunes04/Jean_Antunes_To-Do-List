@@ -7,3 +7,9 @@ A função principal do aplicativo é fornecer aos usuários uma ferramenta de g
 
 ## Motivação
 A motivação por trás do desenvolvimento deste aplicativo é simplificar a vida dos usuários, ajudando-os a organizar suas tarefas de forma mais eficaz e alcançar seus objetivos pessoais e profissionais. Muitas vezes, as pessoas sentem-se sobrecarregadas pela quantidade de tarefas a serem realizadas, e este aplicativo visa proporcionar uma solução que permita aos usuários priorizar suas tarefas, dividindo-as em diferentes categorias e destacando as mais cruciais. A organização pessoal é fundamental para reduzir o estresse, aumentar a produtividade e alcançar um equilíbrio saudável entre trabalho e vida pessoal.
+
+### Diagrama de classes e relacionamentos
+![CLASS](.Imagens/Class.png)
+
+### Fluxograma
+![CLASS](.Imagens/Flux.png)

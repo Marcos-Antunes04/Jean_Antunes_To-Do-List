@@ -7,7 +7,7 @@ import { StyleSheet, Text, View, ScrollView, TextInput, TouchableOpacity, Image,
 const Tarefas = (props) => {
 
   return (
-    <ScrollView style={{flex:1, backgroundColor:'#e8e6e6'}}>
+    <ScrollView style={{flex:1, backgroundColor:'green'}}>
       {'Login'
           ?  <TouchableOpacity
               onPress={()=>{props.navigation.push('Login'
@@ -16,6 +16,17 @@ const Tarefas = (props) => {
               })}} 
               style={styles.buttonProsseguir}
               ><Text style={styles.buttonProsseguirText}>Login</Text></TouchableOpacity>
+              /*PASSAR PARAMS DE UMA TELA PRA OUTRA>> props.avançarParams */
+              :false
+          }
+           {'Cadastro'
+          ?  <TouchableOpacity
+              onPress={()=>{props.navigation.push('Cadastro'
+               , {
+                  numero: parseInt(Math.random()*100)
+              })}} 
+              style={styles.buttonProsseguir}
+              ><Text style={styles.buttonProsseguirText}>Cadastrar-se</Text></TouchableOpacity>
               /*PASSAR PARAMS DE UMA TELA PRA OUTRA>> props.avançarParams */
               :false
           }

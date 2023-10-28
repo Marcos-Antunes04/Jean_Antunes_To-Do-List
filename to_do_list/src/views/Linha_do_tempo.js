@@ -7,8 +7,8 @@ import { StyleSheet, Text, View, ScrollView, TextInput, TouchableOpacity, Image,
 const Linha = (props) => {
 
   return (
-    <ScrollView style={{flex:1, backgroundColor:'#e8e6e6'}}>
-     
+    <ScrollView style={{flex:1, backgroundColor:'blue'}}>
+     <Text>calendário</Text>
     </ScrollView>
   )
 }

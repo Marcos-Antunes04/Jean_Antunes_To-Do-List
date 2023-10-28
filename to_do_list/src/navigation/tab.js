@@ -5,6 +5,9 @@ import Linha_do_tempo from '../views/Linha_do_tempo'
 import Tarefas from '../views/Tarefas'
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
+
+
+
 const Tab=createBottomTabNavigator();
 
 const Routes = (props) => {
@@ -25,10 +28,10 @@ const Routes = (props) => {
     >
 
       <Tab.Screen name='Tarefas' component={Tarefas} options={{tabBarIcon:({focused})=>(
-        <MaterialCommunityIcons name="cart-outline" size={30} color="black" />
+        <MaterialCommunityIcons name="check-all" size={30} color="black" />
       )}} />
       <Tab.Screen name='Linha_do_tempo' component={Linha_do_tempo} options={{tabBarIcon:({focused})=>(
-        <MaterialCommunityIcons name="home-outline" size={30} color="black" />
+        <MaterialCommunityIcons name="calendar-month" size={30} color="black" />
       )}} />
     </Tab.Navigator>
 

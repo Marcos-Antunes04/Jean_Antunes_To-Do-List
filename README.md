@@ -13,3 +13,6 @@ A motivação por trás do desenvolvimento deste aplicativo é simplificar a vid
 
 ### Fluxograma
 ![CLASS](.Imagens/Flux.png)
+
+## Resumo descritivo
+O aplicativo To-do-List será feito em React Native e se baseia em gerenciamento de tarefas. A ideia principal é, após efetuado o login, o usuário se deparar com uma lista de afazeres diários com suas respectivas descrições, horários e grau de urgência indicados de forma limpa e intuitiva. A aplicação também fornece a possibilidade de Criar, Editar e Deletar tarefas, além de fornecer a possibilidade de se visualizar uma linha do tempo de tarefas para planejamento a longo prazo.

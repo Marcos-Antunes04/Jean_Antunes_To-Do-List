@@ -136,7 +136,7 @@ const styles = StyleSheet.create({
     color: 'white',
   },
   monthYearContainer: {
-    backgroundColor: '#ff7f50',
+    backgroundColor: '#F2884B',
     borderRadius: 10,
     paddingHorizontal: 10,
     paddingVertical: 5,

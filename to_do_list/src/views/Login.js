@@ -2,13 +2,9 @@ import React , { useState } from 'react'
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native'
 
 export default function Login(props){
-    const[cliente,setCliente] = useState({ClienteCPF: "",
+    const[cliente,setCliente] = useState({ClienteSenha: "",
     ClienteNome: "",
-    ClienteSexo: "",
-    ClienteDataNascimento: "",
-    ClienteEnderecoResidencia: "",
-    Classificacao1: "string",
-    Classificacao2: "string"})
+   })
     
     
     return (
@@ -17,7 +13,7 @@ export default function Login(props){
        
        <View style={styles.borderradiustop}>
             <View style={styles.container}>
-                <Text style={[styles.title, styles.titleTop]}>Escolha um nome:</Text>
+                <Text style={[styles.title, styles.titleTop]}>Digite seu nome:</Text>
                 
                 <TextInput
                     placeholder='nome'
@@ -26,43 +22,18 @@ export default function Login(props){
                     style={styles.input}
                 />
 
-                <Text style={styles.title}>Digite o seu CPF(somente os números):</Text>
+                <Text style={styles.title}>Digite sua senha:</Text>
                 <TextInput
-                    placeholder='CPF'
+                    placeholder='senha'
                     value={cliente.ClienteCPF}
                     onChangeText={newClienteCPF=>setCliente({ ...cliente, ClienteCPF: newClienteCPF })}
                     style={styles.input}
-                    secureTextEntry={false}
+                    secureTextEntry={true}
                 />
 
-                <Text style={styles.title}>Sexo:</Text>
-                <TextInput
-                    placeholder='masculino/feminino'
-                    value={cliente.ClienteSexo}
-                    onChangeText={newClienteSexo=>setCliente({ ...cliente, ClienteSexo: newClienteSexo })}
-                    style={styles.input}
-                    secureTextEntry={false}
-                />
+                
 
-                <Text style={styles.title}>Digite o seu endereço:</Text>
-                <TextInput
-                    placeholder='endereço'
-                    value={cliente.ClienteEnderecoResidencia}
-                    onChangeText={newClienteEndereco=>setCliente({ ...cliente, ClienteEnderecoResidencia: newClienteEndereco })}
-                    style={styles.input}
-                    secureTextEntry={false}
-                />
-
-                <Text style={styles.title}>Digite sua data de nascimento:</Text>
-                <TextInput
-                    placeholder='DD/MM/AAAA'
-                    value={cliente.ClienteDataNascimento}
-                    onChangeText={newClienteData=>setCliente({ ...cliente, ClienteDataNascimento: newClienteData })}
-                    style={styles.input}
-                    secureTextEntry={false}
-                />
-
-                {console.warn(cliente)}
+               
 
                 <TouchableOpacity style={styles.buttonLogin}
                     onPress={()=>props.navigation.push('Tarefas'
@@ -101,7 +72,7 @@ const styles = StyleSheet.create({
         backgroundColor:'#4169E1'
     },
     buttonLogin:{
-       backgroundColor:'#4169E1',
+       backgroundColor:'#F2884B',
        borderRadius:4,
        paddingVertical:10,
        marginTop:25,

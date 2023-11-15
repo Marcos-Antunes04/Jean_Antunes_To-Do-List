@@ -16,7 +16,7 @@ const st = props => {
     screenOptions={{headerShown: true}}>
             
         <Stack.Screen name='Inicio'
-        options={{title:'Tela inicial'}}>
+        options={{headerShown: false}}>
              {props => (
             
              <Inicio  {...props} />
@@ -25,7 +25,7 @@ const st = props => {
         </Stack.Screen>
 
         <Stack.Screen name='Cadastro'
-        options={{title:'Cadastro'}}>
+        options={{title:'Voltar'}}>
              {props => (
 
               <Cadastro {...props}/>
@@ -34,7 +34,7 @@ const st = props => {
         </Stack.Screen>
 
         <Stack.Screen name='Login'
-        options={{title:'Login'}}>
+        options={{title:'Voltar'}}>
         {props => (
             
                 <Login {...props}/>
@@ -43,7 +43,7 @@ const st = props => {
         </Stack.Screen>
 
         <Stack.Screen name='Tarefas'
-        options={{title:'Tarefas'}}>
+        options={{title:'Sair'}}>
         {props => (
             
                 <Tab {...props}/>

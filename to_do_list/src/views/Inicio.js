@@ -16,6 +16,10 @@ const Tarefas = (props) => {
        </View>
 
        <View>
+          <Text style={{...styles.bemVindo, marginTop:10}}>VisuaList</Text>
+       </View>
+
+       <View>
           <Text style={styles.bemVindo}>Um jeito prático de organizar e priorizar suas atividades diárias!</Text>
        </View>
       {'Login'
